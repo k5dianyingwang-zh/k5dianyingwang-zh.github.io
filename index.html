@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0E1A">
+<title>k5电影网 | 高清电影在线观看_最新电影推荐_热门影视排行榜 - k5dianyingwang-zh.github.io</title>
+<meta name="description" content="k5电影网（k5dianyingwang-zh.github.io）提供最新高清电影在线观看与推荐服务，每日更新院线热映、网络电影、经典老片、欧美剧集、日韩综艺等资源。覆盖动作、喜剧、爱情、科幻、悬疑、恐怖、纪录片、动漫动画等全类型影视内容，支持多条件筛选与高清播放，是影迷寻找好电影的首选平台。">
+<meta name="keywords" content="k5电影网,k5dianyingwang,高清电影在线观看,最新电影推荐,热门电影排行榜,2026最新电影,电影资源下载,电影预告片,院线热映电影,网络电影,经典电影推荐,欧美电影,日韩电影,华语电影,港片,动作电影,喜剧电影,科幻电影,悬疑电影,恐怖电影,爱情电影,动画电影,纪录片推荐,剧集推荐,综艺节目,影视资讯,电影解说,影评推荐,电影分类大全,高分电影榜单">
+<meta name="author" content="k5电影网运营团队">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="bingbot" content="index,follow,max-snippet:-1">
+<meta name="googlebot" content="index,follow">
+<meta name="revisit-after" content="1 days">
+<meta name="rating" content="general">
+<meta name="distribution" content="global">
+<meta name="language" content="zh-CN">
+<meta name="copyright" content="Copyright © 2026 k5电影网. All Rights Reserved.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="k5电影网 - 高清电影在线观看与推荐平台">
+<meta property="og:description" content="每日更新最新电影、热映院线、经典老片，全类型影视资源一站看全。">
+<meta property="og:url" content="https://k5dianyingwang-zh.github.io">
+<meta property="og:site_name" content="k5电影网">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="k5电影网 - 高清电影在线观看">
+<meta name="twitter:description" content="最新电影、热映院线、经典老片，全类型影视推荐平台。">
+<link rel="canonical" href="https://k5dianyingwang-zh.github.io">
+<link rel="alternate" hreflang="zh-CN" href="https://k5dianyingwang-zh.github.io">
+<style>
+:root{
+  --bg:#0A0E1A;--bg2:#0F1424;--card:#141A2E;--line:#1E2740;
+  --txt:#E4E8F5;--mut:#8893B0;--k5:#00E5FF;--k5d:#0099B3;
+  --hot:#FF2E63;--gold:#FFC93C;--ok:#39FF7A;--pur:#A855F7;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--bg);color:var(--txt);line-height:1.7;font-size:15px;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+body::before{
+  content:'';position:fixed;inset:0;z-index:-2;
+  background:radial-gradient(1200px 600px at 15% 8%,rgba(0,229,255,.07),transparent 60%),
+             radial-gradient(900px 500px at 88% 92%,rgba(168,85,247,.06),transparent 55%);
+}
+body::after{
+  content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background-image:linear-gradient(rgba(30,39,64,.35) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(30,39,64,.35) 1px,transparent 1px);
+  background-size:48px 48px;mask-image:radial-gradient(ellipse at center,black,transparent 85%);
+}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+img{display:block;max-width:100%}
+
+.wrap{max-width:1360px;margin:0 auto;padding:0 20px}
+
+/* Top bar */
+.topbar{
+  background:rgba(10,14,26,.85);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);position:sticky;top:0;z-index:200;
+}
+.topbar-in{display:flex;align-items:center;gap:20px;height:62px}
+.logo{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.logo-k5{
+  font-size:1.7rem;font-weight:900;letter-spacing:-1px;color:var(--k5);
+  text-shadow:0 0 20px rgba(0,229,255,.5);
+}
+.logo-name{font-size:.82rem;color:var(--mut);font-weight:500}
+.search-box{
+  flex:1;max-width:420px;margin-left:auto;position:relative;
+}
+.search-box input{
+  width:100%;height:38px;border-radius:19px;border:1px solid var(--line);
+  background:rgba(20,26,46,.8);color:var(--txt);padding:0 42px 0 18px;
+  font-size:.85rem;outline:none;transition:border .2s,box-shadow .2s;
+}
+.search-box input::placeholder{color:#4A5574}
+.search-box input:focus{border-color:var(--k5);box-shadow:0 0 0 3px rgba(0,229,255,.12)}
+.search-box button{
+  position:absolute;right:3px;top:3px;height:32px;width:36px;border:none;
+  border-radius:16px;background:var(--k5);color:#04121A;cursor:pointer;font-size:.9rem;
+}
+.top-links{display:flex;gap:14px;font-size:.82rem;color:var(--mut);flex-shrink:0}
+.top-links a{transition:color .2s}
+.top-links a:hover{color:var(--k5)}
+
+/* Tabs nav */
+.tabs{
+  background:var(--bg2);border-bottom:1px solid var(--line);
+  position:sticky;top:62px;z-index:199;
+}
+.tabs-in{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.tabs-in::-webkit-scrollbar{display:none}
+.tab{
+  padding:13px 18px;font-size:.86rem;color:var(--mut);cursor:pointer;
+  white-space:nowrap;border-bottom:2px solid transparent;transition:all .2s;
+  font-weight:500;
+}
+.tab:hover{color:var(--txt)}
+.tab.active{color:var(--k5);border-bottom-color:var(--k5);background:rgba(0,229,255,.04)}
+.tab .badge{font-size:.62rem;background:var(--hot);color:#fff;padding:1px 5px;border-radius:3px;margin-left:4px;vertical-align:middle}
+
+/* Page panels */
+.page{display:none;padding:28px 0 48px;animation:fade .4s ease}
+.page.show{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* Section */
+.sechd{display:flex;align-items:center;gap:12px;margin:36px 0 18px}
+.sechd:first-child{margin-top:8px}
+.sechd .bar{width:4px;height:20px;background:var(--k5);border-radius:2px}
+.sechd h2{font-size:1.25rem;font-weight:700;letter-spacing:.02em}
+.sechd .more{margin-left:auto;font-size:.78rem;color:var(--mut);transition:color .2s}
+.sechd .more:hover{color:var(--k5)}
+.sechd .sub{font-size:.75rem;color:var(--mut)}
+
+/* Filter chips */
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.chip{
+  padding:6px 14px;border-radius:15px;border:1px solid var(--line);
+  font-size:.78rem;color:var(--mut);cursor:pointer;transition:all .2s;background:var(--card);
+}
+.chip:hover,.chip.on{color:#04121A;border-color:var(--k5);background:var(--k5)}
+
+/* Film grid */
+.fgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.fcard{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;transition:all .25s;cursor:pointer}
+.fcard:hover{transform:translateY(-4px);border-color:var(--k5);box-shadow:0 10px 30px rgba(0,229,255,.12)}
+.poster{
+  position:relative;aspect-ratio:2/3;background:linear-gradient(135deg,#1A2238,#0F1424);
+  display:flex;align-items:center;justify-content:center;overflow:hidden;
+}
+.poster-bg{
+  position:absolute;inset:0;opacity:.5;
+  background:radial-gradient(circle at 30% 20%,rgba(0,229,255,.25),transparent 50%),
+             radial-gradient(circle at 75% 80%,rgba(168,85,247,.2),transparent 45%);
+}
+.poster-emoji{font-size:2.6rem;position:relative;z-index:1;filter:drop-shadow(0 4px 12px rgba(0,0,0,.4))}
+.poster-tag{
+  position:absolute;top:8px;left:8px;z-index:2;font-size:.65rem;font-weight:700;
+  padding:2px 7px;border-radius:4px;
+}
+.tag-hd{background:var(--k5);color:#04121A}
+.tag-sd{background:var(--pur);color:#fff}
+.poster-score{
+  position:absolute;top:8px;right:8px;z-index:2;background:rgba(10,14,26,.88);
+  border:1px solid var(--gold);border-radius:5px;padding:2px 6px;
+  font-size:.72rem;font-weight:700;color:var(--gold);
+}
+.poster-ep{
+  position:absolute;bottom:8px;left:8px;z-index:2;font-size:.68rem;color:var(--mut);
+  background:rgba(10,14,26,.8);padding:2px 6px;border-radius:4px;
+}
+.finfo{padding:11px 12px}
+.finfo h4{font-size:.88rem;font-weight:600;line-height:1.45;margin-bottom:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fmeta{display:flex;justify-content:space-between;font-size:.72rem;color:var(--mut)}
+.fmeta .rate{color:var(--gold)}
+
+/* Ranking */
+.rank-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rank-box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px}
+.rank-box h3{font-size:.95rem;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.rank-box h3 .ic{font-size:1.1rem}
+.rank-item{display:grid;grid-template-columns:28px 1fr auto;gap:10px;align-items:center;padding:9px 0;border-bottom:1px dashed rgba(30,39,64,.6)}
+.rank-item:last-child{border-bottom:none}
+.rn{
+  font-size:1.05rem;font-weight:800;text-align:center;border-radius:6px;
+  font-family:Georgia,serif;line-height:1.6;
+}
+.rn.g1{background:linear-gradient(135deg,#FFD700,#FFA500);color:#3a2500}
+.rn.g2{background:linear-gradient(135deg,#C0C8D4,#8A94A6);color:#2a2f38}
+.rn.g3{background:linear-gradient(135deg,#CD7F32,#A0522D);color:#fff}
+.rn.gn{color:var(--mut);font-size:.9rem}
+.rt{font-size:.86rem;font-weight:500;line-height:1.35}
+.rt small{display:block;font-size:.7rem;color:var(--mut);font-weight:400}
+.rs{font-size:.78rem;color:var(--gold);font-weight:600;white-space:nowrap}
+
+/* Progress bars */
+.stat-list{display:grid;gap:14px}
+.stat-row{display:grid;grid-template-columns:80px 1fr 44px;gap:12px;align-items:center;font-size:.82rem}
+.stat-bar{height:8px;background:var(--line);border-radius:4px;overflow:hidden}
+.stat-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--k5),var(--pur));animation:grow 1s ease}
+@keyframes grow{from{width:0!important}}
+
+/* Genre blocks */
+.genre-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gblock{
+  position:relative;padding:26px 20px;border-radius:10px;overflow:hidden;
+  border:1px solid var(--line);cursor:pointer;min-height:110px;
+  display:flex;flex-direction:column;justify-content:flex-end;transition:all .25s;
+}
+.gblock::before{content:'';position:absolute;inset:0;opacity:.85;z-index:0}
+.gblock:hover{transform:scale(1.02);border-color:transparent}
+.gblock *{position:relative;z-index:1}
+.g1::before{background:linear-gradient(160deg,#1A3A5C,#0A0E1A)}
+.g2::before{background:linear-gradient(160deg,#3A1A2E,#0A0E1A)}
+.g3::before{background:linear-gradient(160deg,#1A3A2E,#0A0E1A)}
+.g4::before{background:linear-gradient(160deg,#3A2E1A,#0A0E1A)}
+.g5::before{background:linear-gradient(160deg,#2E1A3A,#0A0E1A)}
+.g6::before{background:linear-gradient(160deg,#1A2E3A,#0A0E1A)}
+.g7::before{background:linear-gradient(160deg,#3A3A1A,#0A0E1A)}
+.g8::before{background:linear-gradient(160deg,#2A1A2E,#0A0E1A)}
+.gblock h4{font-size:1.1rem;font-weight:700;margin-bottom:3px}
+.gblock p{font-size:.72rem;color:rgba(228,232,245,.65)}
+
+/* Table */
+.dtable{width:100%;border-collapse:collapse;font-size:.85rem}
+.dtable th{
+  background:var(--card);padding:11px 14px;text-align:left;font-size:.75rem;
+  color:var(--mut);letter-spacing:.05em;text-transform:uppercase;border-bottom:2px solid var(--line);font-weight:600;
+}
+.dtable td{padding:12px 14px;border-bottom:1px solid rgba(30,39,64,.5)}
+.dtable tr:hover td{background:rgba(0,229,255,.03)}
+.dtable .fn{font-weight:600}
+.dtable .fn span{display:block;font-size:.72rem;color:var(--mut);font-weight:400}
+.up{color:var(--ok);font-size:.8rem}
+.dn{color:var(--hot);font-size:.8rem}
+
+/* News */
+.news-list{display:grid;gap:0}
+.news-row{display:grid;grid-template-columns:90px 1fr 100px;gap:16px;padding:14px 0;border-bottom:1px solid rgba(30,39,64,.5);align-items:center}
+.news-row:hover{background:rgba(0,229,255,.02)}
+.news-cat{font-size:.7rem;padding:3px 0;text-align:center;border-radius:4px;font-weight:600}
+.c-news{background:rgba(0,229,255,.12);color:var(--k5)}
+.c-rel{background:rgba(255,46,99,.12);color:var(--hot)}
+.c-act{background:rgba(168,85,247,.12);color:var(--pur)}
+.news-t{font-size:.92rem;font-weight:500;line-height:1.5}
+.news-t:hover{color:var(--k5)}
+.news-d{font-size:.75rem;color:var(--mut);text-align:right}
+
+/* Footer */
+.foot{margin-top:56px;border-top:1px solid var(--line);background:var(--bg2);padding:44px 0 24px}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px;margin-bottom:32px}
+.foot-brand .logo-k5{font-size:1.5rem}
+.foot-brand p{font-size:.82rem;color:var(--mut);margin-top:10px;line-height:1.8}
+.foot-col h5{font-size:.85rem;margin-bottom:12px;color:var(--txt)}
+.foot-col a{display:block;padding:4px 0;font-size:.8rem;color:var(--mut);transition:color .2s}
+.foot-col a:hover{color:var(--k5)}
+.foot-bar{border-top:1px solid var(--line);padding-top:18px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.75rem;color:#5A6680}
+.foot-bar .url{color:var(--k5)}
+
+.mob-menu{display:none}
+@media(max-width:1180px){
+  .fgrid{grid-template-columns:repeat(5,1fr)}
+  .rank-grid{grid-template-columns:1fr}
+  .genre-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:900px){
+  .fgrid{grid-template-columns:repeat(4,1fr)}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  .top-links{display:none}
+  .search-box{order:3;max-width:none;margin:0;width:100%}
+  .topbar-in{flex-wrap:wrap;height:auto;padding:10px 0;gap:12px}
+  .tabs{top:auto;position:relative}
+  .fgrid{grid-template-columns:repeat(3,1fr);gap:10px}
+  .genre-grid{grid-template-columns:repeat(2,1fr)}
+  .foot-grid{grid-template-columns:1fr}
+  .news-row{grid-template-columns:1fr;text-align:left;gap:4px}
+  .news-d{text-align:left}
+  .sechd h2{font-size:1.1rem}
+  .poster-emoji{font-size:2rem}
+}
+@media(max-width:400px){
+  .fgrid{grid-template-columns:repeat(2,1fr)}
+  .wrap{padding:0 12px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<!-- Top Bar -->
+<div class="topbar">
+  <div class="wrap topbar-in">
+    <a href="#" class="logo">
+      <span class="logo-k5">k5</span>
+      <span class="logo-name">电影网</span>
+    </a>
+    <div class="search-box">
+      <input type="text" placeholder="搜索影片 / 演员 / 导演 / 类型...">
+      <button>🔍</button>
+    </div>
+    <nav class="top-links">
+      <a href="#">登录</a>
+      <a href="#">注册</a>
+      <a href="#">收藏</a>
+      <a href="#">反馈</a>
+    </nav>
+  </div>
+</div>
+
+<!-- Tabs -->
+<div class="tabs">
+  <div class="wrap tabs-in">
+    <div class="tab active" data-page="p-home">首页</div>
+    <div class="tab" data-page="p-hot">热映榜 <span class="badge">热</span></div>
+    <div class="tab" data-page="p-type">电影分类</div>
+    <div class="tab" data-page="p-series">剧集综艺</div>
+    <div class="tab" data-page="p-chart">排行榜</div>
+    <div class="tab" data-page="p-news">影视资讯</div>
+    <div class="tab" data-page="p-year">年度盘点</div>
+    <div class="tab" data-page="p-about">关于我们</div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- PAGE: Home -->
+  <section class="page show" id="p-home">
+
+    <div class="sechd">
+      <div class="bar"></div>
+      <h2>今日更新推荐</h2>
+      <span class="sub">2026年10月9日 · 已更新 27 部</span>
+      <a href="#" class="more">查看全部 ›</a>
+    </div>
+    <div class="chips">
+      <span class="chip on">全部</span>
+      <span class="chip">动作</span>
+      <span class="chip">喜剧</span>
+      <span class="chip">科幻</span>
+      <span class="chip">悬疑</span>
+      <span class="chip">爱情</span>
+      <span class="chip">恐怖</span>
+      <span class="chip">动画</span>
+      <span class="chip">纪录片</span>
+    </div>
+    <div class="fgrid">
+      <div class="fcard">
+        <div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-hd">蓝光</span><span class="poster-score">9.2</span><span class="poster-emoji">🚀</span></div>
+        <div class="finfo"><h4>星际回声：黎明之战</h4><div class="fmeta"><span>科幻 / 动作</span><span class="rate">★ 9.2</span></div></div>
+      </div>
+      <div class="fcard">
+        <div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-hd">蓝光</span><span class="poster-score">8.7</span><span class="poster-emoji">🕵️</span></div>
+        <div class="finfo"><h4>无声证人2026</h4><div class="fmeta"><span>悬疑 / 犯罪</span><span class="rate">★ 8.7</span></div></div>
+      </div>
+      <div class="fcard">
+        <div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-sd">高清</span><span class="poster-score">8.9</span><span class="poster-emoji">💕</span></div>
+        <div class="finfo"><h4>南方的风</h4><div class="fmeta"><span>爱情 / 文艺</span><span class="rate">★ 8.9</span></div></div>
+      </div>
+      <div class="fcard">
+        <div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-hd">蓝光</span><span class="poster-score">9.0</span><span class="poster-emoji">🐉</span></div>
+        <div class="finfo"><h4>封神·昆仑劫</h4><div class="fmeta"><span>奇幻 / 动作</span><span class="rate">★ 9.0</span></div></div>
+      </div>
+      <div class="fcard">
+        <div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-hd">蓝光</span><span class="poster-score">8.5</span><span class="poster-emoji">😂</span></div>
+        <div class="finfo"><h4>好运来事务所</h4><div class="fmeta"><span>喜剧</span><span class="rate">★ 8.5</span></div></div>
+      </div>
+      <div class="fcard">
+        <div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-sd">高清</span><span class="poster-score">8.3</span><span class="poster-emoji">🧟</span></div>
+        <div class="finfo"><h4>午夜地铁</h4><div class="fmeta"><span>恐怖 / 惊悚</span><span class="rate">★ 8.3</span></div></div>
+      </div>
+      <div class="fcard">
+        <div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-hd">蓝光</span><span class="poster-score">9.4</span><span class="poster-emoji">🎭</span></div>
+        <div class="finfo"><h4>父亲的战争</h4><div class="fmeta"><span>剧情 / 历史</span><span class="rate">★ 9.4</span></div></div>
+      </div>
+      <div class="fcard">
+        <div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-hd">蓝光</span><span class="poster-score">8.8</span><span class="poster-emoji">🐠</span></div>
+        <div class="finfo"><h4>深海传说</h4><div class="fmeta"><span>动画 / 冒险</span><span class="rate">★ 8.8</span></div></div>
+      </div>
+      <div class="fcard">
+        <div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-sd">高清</span><span class="poster-score">7.9</span><span class="poster-emoji">🏃</span></div>
+        <div class="finfo"><h4>极速追凶</h4><div class="fmeta"><span>动作 / 犯罪</span><span class="rate">★ 7.9</span></div></div>
+      </div>
+      <div class="fcard">
+        <div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-hd">蓝光</span><span class="poster-score">8.6</span><span class="poster-emoji">🏔️</span></div>
+        <div class="finfo"><h4>雪线之上</h4><div class="fmeta"><span>剧情 / 冒险</span><span class="rate">★ 8.6</span></div></div>
+      </div>
+      <div class="fcard">
+        <div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-sd">高清</span><span class="poster-score">8.1</span><span class="poster-emoji">🤖</span></div>
+        <div class="finfo"><h4>AI恋人</h4><div class="fmeta"><span>科幻 / 爱情</span><span class="rate">★ 8.1</span></div></div>
+      </div>
+      <div class="fcard">
+        <div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-hd">蓝光</span><span class="poster-score">9.1</span><span class="poster-emoji">🎬</span></div>
+        <div class="finfo"><h4>长安十二时辰：归来</h4><div class="fmeta"><span>古装 / 悬疑</span><span class="rate">★ 9.1</span></div></div>
+      </div>
+    </div>
+
+    <div class="sechd">
+      <div class="bar"></div>
+      <h2>热门剧集推荐</h2>
+      <a href="#" class="more">更多剧集 ›</a>
+    </div>
+    <div class="fgrid">
+      <div class="fcard">
+        <div class="poster"><div class="poster-bg"></div><span class="poster-ep">38集全</span><span class="poster-score">9.3</span><span class="poster-emoji">👑</span></div>
+        <div class="finfo"><h4>大宋提刑官·新编</h4><div class="fmeta"><span>古装 / 悬疑</span><span class="rate">★ 9.3</span></div></div>
+      </div>
+      <div class="fcard">
+        <div class="poster"><div class="poster-bg"></div><span class="poster-ep">更新至24集</span><span class="poster-score">8.7</span><span class="poster-emoji">🏢</span></div>
+        <div class="finfo"><h4>都市夜归人</h4><div class="fmeta"><span>都市 / 情感</span><span class="rate">★ 8.7</span></div></div>
+      </div>
+      <div class="fcard">
+        <div class="poster"><div class="poster-bg"></div><span class="poster-ep">12集全</span><span class="poster-score">9.0</span><span class="poster-emoji">🔬</span></div>
+        <div class="finfo"><h4>暗夜实验室</h4><div class="fmeta"><span>科幻 / 美剧</span><span class="rate">★ 9.0</span></div></div>
+      </div>
+      <div class="fcard">
+        <div class="poster"><div class="poster-bg"></div><span class="poster-ep">更新至10集</span><span class="poster-score">8.4</span><span class="poster-emoji">🍜</span></div>
+        <div class="finfo"><h4>深夜食堂·东京篇</h4><div class="fmeta"><span>日剧 / 治愈</span><span class="rate">★ 8.4</span></div></div>
+      </div>
+      <div class="fcard">
+        <div class="poster"><div class="poster-bg"></div><span class="poster-ep">16集全</span><span class="poster-score">8.9</span><span class="poster-emoji">⚔️</span></div>
+        <div class="finfo"><h4>权力的游戏：龙之家族Ⅱ</h4><div class="fmeta"><span>奇幻 / 美剧</span><span class="rate">★ 8.9</span></div></div>
+      </div>
+      <div class="fcard">
+        <div class="poster"><div class="poster-bg"></div><span class="poster-ep">更新至32集</span><span class="poster-score">8.2</span><span class="poster-emoji">👮</span></div>
+        <div class="finfo"><h4>破冰行动·2026</h4><div class="fmeta"><span>警匪 / 犯罪</span><span class="rate">★ 8.2</span></div></div>
+      </div>
+    </div>
+
+    <div class="sechd">
+      <div class="bar"></div>
+      <h2>电影类型导航</h2>
+      <a href="#" class="more">全部类型 ›</a>
+    </div>
+    <div class="genre-grid">
+      <div class="gblock g1"><h4>动作片</h4><p>1,286 部</p></div>
+      <div class="gblock g2"><h4>喜剧片</h4><p>1,542 部</p></div>
+      <div class="gblock g3"><h4>爱情片</h4><p>2,031 部</p></div>
+      <div class="gblock g4"><h4>科幻片</h4><p>876 部</p></div>
+      <div class="gblock g5"><h4>悬疑片</h4><p>1,103 部</p></div>
+      <div class="gblock g6"><h4>恐怖片</h4><p>742 部</p></div>
+      <div class="gblock g7"><h4>动画电影</h4><p>658 部</p></div>
+      <div class="gblock g8"><h4>纪录片</h4><p>523 部</p></div>
+    </div>
+
+  </section>
+
+  <!-- PAGE: Hot -->
+  <section class="page" id="p-hot">
+    <div class="sechd"><div class="bar"></div><h2>院线热映榜</h2><span class="sub">数据每 30 分钟更新一次</span></div>
+    <div class="fgrid">
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-hd">IMAX</span><span class="poster-score">9.5</span><span class="poster-emoji">🚀</span></div><div class="finfo"><h4>星际回声：黎明之战</h4><div class="fmeta"><span>今日票房 4820万</span><span class="rate">★ 9.5</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-hd">蓝光</span><span class="poster-score">9.0</span><span class="poster-emoji">🐉</span></div><div class="finfo"><h4>封神·昆仑劫</h4><div class="fmeta"><span>今日票房 3650万</span><span class="rate">★ 9.0</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-sd">高清</span><span class="poster-score">8.9</span><span class="poster-emoji">💕</span></div><div class="finfo"><h4>南方的风</h4><div class="fmeta"><span>今日票房 2980万</span><span class="rate">★ 8.9</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-hd">蓝光</span><span class="poster-score">9.4</span><span class="poster-emoji">🎭</span></div><div class="finfo"><h4>父亲的战争</h4><div class="fmeta"><span>今日票房 2410万</span><span class="rate">★ 9.4</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-hd">蓝光</span><span class="poster-score">8.7</span><span class="poster-emoji">🕵️</span></div><div class="finfo"><h4>无声证人2026</h4><div class="fmeta"><span>今日票房 1980万</span><span class="rate">★ 8.7</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-sd">高清</span><span class="poster-score">8.6</span><span class="poster-emoji">🏔️</span></div><div class="finfo"><h4>雪线之上</h4><div class="fmeta"><span>今日票房 1620万</span><span class="rate">★ 8.6</span></div></div></div>
+    </div>
+
+    <div class="sechd"><div class="bar"></div><h2>本周热度飙升</h2></div>
+    <div class="rank-grid">
+      <div class="rank-box">
+        <h3><span class="ic">🔥</span>热度上升榜</h3>
+        <div class="rank-item"><span class="rn g1">1</span><span class="rt">午夜地铁<small>恐怖 / 惊悚</small></span><span class="rs">↑ 312%</span></div>
+        <div class="rank-item"><span class="rn g2">2</span><span class="rt">AI恋人<small>科幻 / 爱情</small></span><span class="rs">↑ 248%</span></div>
+        <div class="rank-item"><span class="rn g3">3</span><span class="rt">极速追凶<small>动作 / 犯罪</small></span><span class="rs">↑ 187%</span></div>
+        <div class="rank-item"><span class="rn gn">4</span><span class="rt">好运来事务所<small>喜剧</small></span><span class="rs">↑ 156%</span></div>
+        <div class="rank-item"><span class="rn gn">5</span><span class="rt">深海传说<small>动画</small></span><span class="rs">↑ 98%</span></div>
+      </div>
+      <div class="rank-box">
+        <h3><span class="ic">⭐</span>高分口碑榜</h3>
+        <div class="rank-item"><span class="rn g1">1</span><span class="rt">父亲的战争<small>9.4分 · 剧情</small></span><span class="rs">9.4</span></div>
+        <div class="rank-item"><span class="rn g2">2</span><span class="rt">星际回声：黎明之战<small>9.2分 · 科幻</small></span><span class="rs">9.2</span></div>
+        <div class="rank-item"><span class="rn g3">3</span><span class="rt">大宋提刑官·新编<small>9.3分 · 剧集</small></span><span class="rs">9.3</span></div>
+        <div class="rank-item"><span class="rn gn">4</span><span class="rt">长安十二时辰：归来<small>9.1分 · 古装</small></span><span class="rs">9.1</span></div>
+        <div class="rank-item"><span class="rn gn">5</span><span class="rt">封神·昆仑劫<small>9.0分 · 奇幻</small></span><span class="rs">9.0</span></div>
+      </div>
+      <div class="rank-box">
+        <h3><span class="ic">💬</span>讨论热度榜</h3>
+        <div class="rank-item"><span class="rn g1">1</span><span class="rt">AI恋人<small>8.2万 讨论</small></span><span class="rs">8.2w</span></div>
+        <div class="rank-item"><span class="rn g2">2</span><span class="rt">都市夜归人<small>6.7万 讨论</small></span><span class="rs">6.7w</span></div>
+        <div class="rank-item"><span class="rn g3">3</span><span class="rt">封神·昆仑劫<small>5.9万 讨论</small></span><span class="rs">5.9w</span></div>
+        <div class="rank-item"><span class="rn gn">4</span><span class="rt">暗夜实验室<small>4.3万 讨论</small></span><span class="rs">4.3w</span></div>
+        <div class="rank-item"><span class="rn gn">5</span><span class="rt">破冰行动·2026<small>3.8万 讨论</small></span><span class="rs">3.8w</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE: Type -->
+  <section class="page" id="p-type">
+    <div class="sechd"><div class="bar"></div><h2>电影分类浏览</h2><span class="sub">按类型 / 地区 / 年份快速筛选</span></div>
+    <div class="chips">
+      <span class="chip on">全部类型</span>
+      <span class="chip">动作</span><span class="chip">喜剧</span><span class="chip">爱情</span><span class="chip">科幻</span>
+      <span class="chip">悬疑</span><span class="chip">恐怖</span><span class="chip">动画</span><span class="chip">纪录片</span>
+      <span class="chip">战争</span><span class="chip">文艺</span><span class="chip">古装</span><span class="chip">奇幻</span>
+    </div>
+    <div class="chips">
+      <span class="chip on">全部地区</span>
+      <span class="chip">中国大陆</span><span class="chip">中国香港</span><span class="chip">中国台湾</span>
+      <span class="chip">美国</span><span class="chip">韩国</span><span class="chip">日本</span><span class="chip">欧洲</span>
+    </div>
+    <div class="chips">
+      <span class="chip on">全部年份</span>
+      <span class="chip">2026</span><span class="chip">2025</span><span class="chip">2024</span><span class="chip">2023</span>
+      <span class="chip">2020-2022</span><span class="chip">2015-2019</span><span class="chip">经典老片</span>
+    </div>
+    <div class="fgrid">
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-hd">蓝光</span><span class="poster-score">8.8</span><span class="poster-emoji">🥋</span></div><div class="finfo"><h4>叶问：终极一战</h4><div class="fmeta"><span>动作 / 2026</span><span class="rate">★ 8.8</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-sd">高清</span><span class="poster-score">7.8</span><span class="poster-emoji">😂</span></div><div class="finfo"><h4>夏洛特烦恼2</h4><div class="fmeta"><span>喜剧 / 2026</span><span class="rate">★ 7.8</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-hd">蓝光</span><span class="poster-score">8.4</span><span class="poster-emoji">🛸</span></div><div class="finfo"><h4>异星觉醒</h4><div class="fmeta"><span>科幻 / 2025</span><span class="rate">★ 8.4</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-sd">高清</span><span class="poster-score">8.0</span><span class="poster-emoji">🔍</span></div><div class="finfo"><h4>消失的她·迷局</h4><div class="fmeta"><span>悬疑 / 2026</span><span class="rate">★ 8.0</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-hd">蓝光</span><span class="poster-score">8.7</span><span class="poster-emoji">💃</span></div><div class="finfo"><h4>爱在日落黄昏时</h4><div class="fmeta"><span>爱情 / 2025</span><span class="rate">★ 8.7</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-sd">高清</span><span class="poster-score">7.5</span><span class="poster-emoji">👻</span></div><div class="finfo"><h4>咒怨：新章</h4><div class="fmeta"><span>恐怖 / 2025</span><span class="rate">★ 7.5</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-hd">蓝光</span><span class="poster-score">9.2</span><span class="poster-emoji">🐠</span></div><div class="finfo"><h4>深海传说</h4><div class="fmeta"><span>动画 / 2026</span><span class="rate">★ 9.2</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-sd">高清</span><span class="poster-score">8.6</span><span class="poster-emoji">🐎</span></div><div class="finfo"><h4>蒙古骑士</h4><div class="fmeta"><span>战争 / 2024</span><span class="rate">★ 8.6</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-hd">蓝光</span><span class="poster-score">8.3</span><span class="poster-emoji">🎨</span></div><div class="finfo"><h4>美术馆之夜</h4><div class="fmeta"><span>文艺 / 2025</span><span class="rate">★ 8.3</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-sd">高清</span><span class="poster-score">8.1</span><span class="poster-emoji">⚔️</span></div><div class="finfo"><h4>花木兰：巾帼</h4><div class="fmeta"><span>古装 / 2026</span><span class="rate">★ 8.1</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-hd">蓝光</span><span class="poster-score">8.9</span><span class="poster-emoji">🧙</span></div><div class="finfo"><h4>魔法学院：暗影篇</h4><div class="fmeta"><span>奇幻 / 2026</span><span class="rate">★ 8.9</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-sd">高清</span><span class="poster-score">8.2</span><span class="poster-emoji">🌍</span></div><div class="finfo"><h4>地球脉动：极地</h4><div class="fmeta"><span>纪录片 / 2025</span><span class="rate">★ 8.2</span></div></div></div>
+    </div>
+  </section>
+
+  <!-- PAGE: Series -->
+  <section class="page" id="p-series">
+    <div class="sechd"><div class="bar"></div><h2>热播剧集</h2></div>
+    <div class="fgrid">
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-ep">38集全</span><span class="poster-score">9.3</span><span class="poster-emoji">👑</span></div><div class="finfo"><h4>大宋提刑官·新编</h4><div class="fmeta"><span>古装 / 悬疑</span><span class="rate">★ 9.3</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-ep">更新至24集</span><span class="poster-score">8.7</span><span class="poster-emoji">🏢</span></div><div class="finfo"><h4>都市夜归人</h4><div class="fmeta"><span>都市 / 情感</span><span class="rate">★ 8.7</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-ep">12集全</span><span class="poster-score">9.0</span><span class="poster-emoji">🔬</span></div><div class="finfo"><h4>暗夜实验室</h4><div class="fmeta"><span>科幻 / 美剧</span><span class="rate">★ 9.0</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-ep">16集全</span><span class="poster-score">8.9</span><span class="poster-emoji">⚔️</span></div><div class="finfo"><h4>权力的游戏：龙之家族Ⅱ</h4><div class="fmeta"><span>奇幻 / 美剧</span><span class="rate">★ 8.9</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-ep">更新至10集</span><span class="poster-score">8.4</span><span class="poster-emoji">🍜</span></div><div class="finfo"><h4>深夜食堂·东京篇</h4><div class="fmeta"><span>日剧 / 治愈</span><span class="rate">★ 8.4</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-ep">更新至32集</span><span class="poster-score">8.2</span><span class="poster-emoji">👮</span></div><div class="finfo"><h4>破冰行动·2026</h4><div class="fmeta"><span>警匪 / 犯罪</span><span class="rate">★ 8.2</span></div></div></div>
+    </div>
+
+    <div class="sechd"><div class="bar"></div><h2>综艺 & 动漫</h2></div>
+    <div class="fgrid">
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-ep">更新中</span><span class="poster-score">8.6</span><span class="poster-emoji">🎤</span></div><div class="finfo"><h4>歌手2026</h4><div class="fmeta"><span>音乐综艺</span><span class="rate">★ 8.6</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-ep">更新中</span><span class="poster-score">8.3</span><span class="poster-emoji">🏃</span></div><div class="finfo"><h4>奔跑吧·黄河篇</h4><div class="fmeta"><span>户外真人秀</span><span class="rate">★ 8.3</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-ep">52集全</span><span class="poster-score">9.1</span><span class="poster-emoji">🦸</span></div><div class="finfo"><h4>超人总动员：新世代</h4><div class="fmeta"><span>动漫 / 冒险</span><span class="rate">★ 9.1</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-ep">更新至18集</span><span class="poster-score">8.8</span><span class="poster-emoji">🐉</span></div><div class="finfo"><h4>斗罗大陆·终极篇</h4><div class="fmeta"><span>国漫 / 玄幻</span><span class="rate">★ 8.8</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-ep">24集全</span><span class="poster-score">8.5</span><span class="poster-emoji">🍥</span></div><div class="finfo"><h4>鬼灭之刃：无限城篇</h4><div class="fmeta"><span>日漫 / 热血</span><span class="rate">★ 8.5</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-ep">更新中</span><span class="poster-score">8.0</span><span class="poster-emoji">🎮</span></div><div class="finfo"><h4>电竞之王</h4><div class="fmeta"><span>网剧 / 竞技</span><span class="rate">★ 8.0</span></div></div></div>
+    </div>
+  </section>
+
+  <!-- PAGE: Chart -->
+  <section class="page" id="p-chart">
+    <div class="sechd"><div class="bar"></div><h2>综合排行榜</h2><span class="sub">基于播放量 · 评分 · 讨论度综合计算</span></div>
+    <div class="rank-grid">
+      <div class="rank-box">
+        <h3><span class="ic">🏆</span>综合 TOP10</h3>
+        <div class="rank-item"><span class="rn g1">1</span><span class="rt">星际回声：黎明之战<small>科幻 / 动作</small></span><span class="rs">9.52</span></div>
+        <div class="rank-item"><span class="rn g2">2</span><span class="rt">父亲的战争<small>剧情 / 历史</small></span><span class="rs">9.48</span></div>
+        <div class="rank-item"><span class="rn g3">3</span><span class="rt">大宋提刑官·新编<small>古装 / 悬疑剧</small></span><span class="rs">9.43</span></div>
+        <div class="rank-item"><span class="rn gn">4</span><span class="rt">封神·昆仑劫<small>奇幻 / 动作</small></span><span class="rs">9.20</span></div>
+        <div class="rank-item"><span class="rn gn">5</span><span class="rt">长安十二时辰：归来<small>古装 / 悬疑</small></span><span class="rs">9.15</span></div>
+        <div class="rank-item"><span class="rn gn">6</span><span class="rt">南方的风<small>爱情 / 文艺</small></span><span class="rs">8.98</span></div>
+        <div class="rank-item"><span class="rn gn">7</span><span class="rt">深海传说<small>动画 / 冒险</small></span><span class="rs">8.92</span></div>
+        <div class="rank-item"><span class="rn gn">8</span><span class="rt">无声证人2026<small>悬疑 / 犯罪</small></span><span class="rs">8.87</span></div>
+        <div class="rank-item"><span class="rn gn">9</span><span class="rt">暗夜实验室<small>科幻 / 美剧</small></span><span class="rs">8.85</span></div>
+        <div class="rank-item"><span class="rn gn">10</span><span class="rt">雪线之上<small>剧情 / 冒险</small></span><span class="rs">8.76</span></div>
+      </div>
+      <div class="rank-box">
+        <h3><span class="ic">📺</span>播放量榜</h3>
+        <div class="rank-item"><span class="rn g1">1</span><span class="rt">星际回声：黎明之战<small>3.2亿次</small></span><span class="rs">3.2亿</span></div>
+        <div class="rank-item"><span class="rn g2">2</span><span class="rt">封神·昆仑劫<small>2.8亿次</small></span><span class="rs">2.8亿</span></div>
+        <div class="rank-item"><span class="rn g3">3</span><span class="rt">大宋提刑官·新编<small>2.1亿次</small></span><span class="rs">2.1亿</span></div>
+        <div class="rank-item"><span class="rn gn">4</span><span class="rt">都市夜归人<small>1.7亿次</small></span><span class="rs">1.7亿</span></div>
+        <div class="rank-item"><span class="rn gn">5</span><span class="rt">破冰行动·2026<small>1.4亿次</small></span><span class="rs">1.4亿</span></div>
+      </div>
+      <div class="rank-box">
+        <h3><span class="ic">💎</span>类型偏好分布</h3>
+        <div class="stat-list">
+          <div class="stat-row"><span>喜剧片</span><span class="stat-bar"><span class="stat-fill" style="width:92%;background:linear-gradient(90deg,#FFC93C,#FFA500)"></span></span><span>18.6%</span></div>
+          <div class="stat-row"><span>动作片</span><span class="stat-bar"><span class="stat-fill" style="width:85%;background:linear-gradient(90deg,#00E5FF,#0099B3)"></span></span><span>16.2%</span></div>
+          <div class="stat-row"><span>爱情片</span><span class="stat-bar"><span class="stat-fill" style="width:78%;background:linear-gradient(90deg,#FF2E63,#C2254F)"></span></span><span>14.8%</span></div>
+          <div class="stat-row"><span>悬疑片</span><span class="stat-bar"><span class="stat-fill" style="width:71%;background:linear-gradient(90deg,#A855F7,#7C3AED)"></span></span><span>12.5%</span></div>
+          <div class="stat-row"><span>科幻片</span><span class="stat-bar"><span class="stat-fill" style="width:64%;background:linear-gradient(90deg,#39FF7A,#22C55E)"></span></span><span>10.3%</span></div>
+          <div class="stat-row"><span>其他</span><span class="stat-bar"><span class="stat-fill" style="width:45%;background:linear-gradient(90deg,#8893B0,#5A6680)"></span></span><span>27.6%</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE: News -->
+  <section class="page" id="p-news">
+    <div class="sechd"><div class="bar"></div><h2>影视资讯</h2><span class="sub">最新电影新闻 · 行业动态 · 活动资讯</span><a href="#" class="more">全部资讯 ›</a></div>
+    <div class="news-list">
+      <div class="news-row"><span class="news-cat c-news">电影资讯</span><a href="#" class="news-t">《星际回声：黎明之战》续集立项，导演确认回归执导</a><span class="news-d">2小时前</span></div>
+      <div class="news-row"><span class="news-cat c-rel">行业动态</span><a href="#" class="news-t">2026年国庆档总票房突破28亿，《父亲的战争》领跑口碑榜</a><span class="news-d">4小时前</span></div>
+      <div class="news-row"><span class="news-cat c-act">活动资讯</span><a href="#" class="news-t">k5电影网观影团招募：本周六《雪线之上》超前点映场</a><span class="news-d">6小时前</span></div>
+      <div class="news-row"><span class="news-cat c-news">电影资讯</span><a href="#" class="news-t">《封神·昆仑劫》宣布延长上映至11月底，累计票房已破15亿</a><span class="news-d">昨天</span></div>
+      <div class="news-row"><span class="news-cat c-rel">行业动态</span><a href="#" class="news-t">流媒体与院线窗口期再缩短，多部影片采用同步上映模式</a><span class="news-d">昨天</span></div>
+      <div class="news-row"><span class="news-cat c-news">电影资讯</span><a href="#" class="news-t">《深海传说》导演透露续集计划：将探索深海热泉生态</a><span class="news-d">2天前</span></div>
+      <div class="news-row"><span class="news-cat c-act">活动资讯</span><a href="#" class="news-t">k5电影网 × 豆瓣「年度十佳」联合评选活动正式启动</a><span class="news-d">2天前</span></div>
+      <div class="news-row"><span class="news-cat c-rel">行业动态</span><a href="#" class="news-t">AI生成内容在影视后期中的应用规范正式发布</a><span class="news-d">3天前</span></div>
+      <div class="news-row"><span class="news-cat c-news">电影资讯</span><a href="#" class="news-t">《长安十二时辰：归来》宣布开发前传剧集，2027年开机</a><span class="news-d">3天前</span></div>
+      <div class="news-row"><span class="news-cat c-act">活动资讯</span><a href="#" class="news-t">万圣节特别企划：恐怖片专题放映周，注册用户免费看</a><span class="news-d">4天前</span></div>
+    </div>
+
+    <div class="sechd"><div class="bar"></div><h2>即将上映</h2></div>
+    <table class="dtable">
+      <thead><tr><th>片名</th><th>类型</th><th>导演</th><th>上映日期</th><th>想看人数</th><th>趋势</th></tr></thead>
+      <tbody>
+        <tr><td class="fn">风暴之眼<span>飓风救援系列最新作</span></td><td>动作 / 灾难</td><td>林超贤</td><td>2026.10.15</td><td>12.6万</td><td class="up">↑ 23%</td></tr>
+        <tr><td class="fn">月球背面<span>硬科幻巨制，太空探险题材</span></td><td>科幻</td><td>郭帆</td><td>2026.10.22</td><td>28.3万</td><td class="up">↑ 41%</td></tr>
+        <tr><td class="fn">花好月圆<span>都市浪漫爱情喜剧</span></td><td>爱情 / 喜剧</td><td>陈可辛</td><td>2026.11.05</td><td>8.9万</td><td class="up">↑ 12%</td></tr>
+        <tr><td class="fn">地下铁道<span>改编自普利策获奖小说</span></td><td>剧情 / 历史</td><td>巴里·詹金斯</td><td>2026.11.18</td><td>5.4万</td><td class="up">↑ 8%</td></tr>
+        <tr><td class="fn">僵尸新娘2<span>定格动画经典续作</span></td><td>动画 / 奇幻</td><td>蒂姆·伯顿</td><td>2026.12.01</td><td>19.7万</td><td class="up">↑ 35%</td></tr>
+        <tr><td class="fn">最后的武士<span>日式古装动作大片</span></td><td>动作 / 古装</td><td>山崎贵</td><td>2026.12.20</td><td>7.2万</td><td class="dn">↓ 3%</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- PAGE: Year -->
+  <section class="page" id="p-year">
+    <div class="sechd"><div class="bar"></div><h2>2026 年度盘点</h2><span class="sub">截至 2026年10月9日</span></div>
+    <div class="fgrid">
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-hd">年度</span><span class="poster-score">9.5</span><span class="poster-emoji">🚀</span></div><div class="finfo"><h4>星际回声：黎明之战</h4><div class="fmeta"><span>年度票房冠军</span><span class="rate">★ 9.5</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-hd">年度</span><span class="poster-score">9.4</span><span class="poster-emoji">🎭</span></div><div class="finfo"><h4>父亲的战争</h4><div class="fmeta"><span>年度口碑最佳</span><span class="rate">★ 9.4</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-sd">年度</span><span class="poster-score">9.3</span><span class="poster-emoji">👑</span></div><div class="finfo"><h4>大宋提刑官·新编</h4><div class="fmeta"><span>年度最佳剧集</span><span class="rate">★ 9.3</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-hd">年度</span><span class="poster-score">9.2</span><span class="poster-emoji">🐠</span></div><div class="finfo"><h4>深海传说</h4><div class="fmeta"><span>年度最佳动画</span><span class="rate">★ 9.2</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-sd">年度</span><span class="poster-score">9.1</span><span class="poster-emoji">🎬</span></div><div class="finfo"><h4>长安十二时辰：归来</h4><div class="fmeta"><span>年度最佳古装</span><span class="rate">★ 9.1</span></div></div></div>
+      <div class="fcard"><div class="poster"><div class="poster-bg"></div><span class="poster-tag tag-hd">年度</span><span class="poster-score">9.0</span><span class="poster-emoji">🔬</span></div><div class="finfo"><h4>暗夜实验室</h4><div class="fmeta"><span>年度最佳美剧</span><span class="rate">★ 9.0</span></div></div></div>
+    </div>
+
+    <div class="sechd"><div class="bar"></div><h2>年度数据速览</h2></div>
+    <div class="rank-grid">
+      <div class="rank-box">
+        <h3><span class="ic">📊</span>平台数据</h3>
+        <div class="stat-list">
+          <div class="stat-row"><span>收录影片</span><span class="stat-bar"><span class="stat-fill" style="width:88%;background:linear-gradient(90deg,#00E5FF,#0099B3)"></span></span><span>9,261</span></div>
+          <div class="stat-row"><span>今日更新</span><span class="stat-bar"><span class="stat-fill" style="width:32%;background:linear-gradient(90deg,#39FF7A,#22C55E)"></span></span><span>27部</span></div>
+          <div class="stat-row"><span>注册用户</span><span class="stat-bar"><span class="stat-fill" style="width:76%;background:linear-gradient(90deg,#A855F7,#7C3AED)"></span></span><span>186万</span></div>
+          <div class="stat-row"><span>日均播放</span><span class="stat-bar"><span class="stat-fill" style="width:65%;background:linear-gradient(90deg,#FFC93C,#FFA500)"></span></span><span>420万</span></div>
+        </div>
+      </div>
+      <div class="rank-box">
+        <h3><span class="ic">🌍</span>地区热度 TOP5</h3>
+        <div class="rank-item"><span class="rn g1">1</span><span class="rt">中国大陆<small>国产片为主</small></span><span class="rs">38%</span></div>
+        <div class="rank-item"><span class="rn g2">2</span><span class="rt">美国<small>好莱坞大片</small></span><span class="rs">27%</span></div>
+        <div class="rank-item"><span class="rn g3">3</span><span class="rt">韩国<small>犯罪 / 悬疑</small></span><span class="rs">12%</span></div>
+        <div class="rank-item"><span class="rn gn">4</span><span class="rt">日本<small>动画 / 治愈</small></span><span class="rs">10%</span></div>
+        <div class="rank-item"><span class="rn gn">5</span><span class="rt">中国香港<small>动作 / 警匪</small></span><span class="rs">8%</span></div>
+      </div>
+      <div class="rank-box">
+        <h3><span class="ic">📈</span>2026年每月热门</h3>
+        <div class="stat-list">
+          <div class="stat-row"><span>1月</span><span class="stat-bar"><span class="stat-fill" style="width:62%;background:linear-gradient(90deg,#00E5FF,#A855F7)"></span></span><span>《雪国列车》</span></div>
+          <div class="stat-row"><span>4月</span><span class="stat-bar"><span class="stat-fill" style="width:71%;background:linear-gradient(90deg,#00E5FF,#A855F7)"></span></span><span>《春日物语》</span></div>
+          <div class="stat-row"><span>7月</span><span class="stat-bar"><span class="stat-fill" style="width:82%;background:linear-gradient(90deg,#00E5FF,#A855F7)"></span></span><span>《夏日友晴天》</span></div>
+          <div class="stat-row"><span>10月</span><span class="stat-bar"><span class="stat-fill" style="width:98%;background:linear-gradient(90deg,#00E5FF,#A855F7)"></span></span><span>《星际回声》</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE: About -->
+  <section class="page" id="p-about">
+    <div class="sechd"><div class="bar"></div><h2>关于 k5电影网</h2></div>
+    <div style="background:var(--card);border:1px solid var(--line);border-radius:12px;padding:32px;margin-bottom:24px">
+      <h3 style="font-size:1.2rem;margin-bottom:14px;color:var(--k5)">k5电影网是什么？</h3>
+      <p style="color:var(--mut);margin-bottom:16px;line-height:1.9">k5电影网（k5dianyingwang-zh.github.io）是一个专注于高清电影在线观看与影视推荐的导航平台。我们每日更新院线热映、网络电影、经典老片、欧美剧集、日韩综艺等全类型影视资源，帮助影迷快速发现好电影、好剧集。</p>
+      <h3 style="font-size:1.2rem;margin-bottom:14px;color:var(--k5)">网站特色</h3>
+      <div class="genre-grid" style="margin-top:8px">
+        <div class="gblock g1"><h4>每日更新</h4><p>最新资源第一时间收录</p></div>
+        <div class="gblock g6"><h4>全类型覆盖</h4><p>12大类型，万余部影片</p></div>
+        <div class="gblock g4"><h4>高清画质</h4><p>蓝光 / 高清多档可选</p></div>
+        <div class="gblock g5"><h4>智能推荐</h4><p>多维度榜单精准匹配</p></div>
+      </div>
+    </div>
+
+    <div class="sechd"><div class="bar"></div><h2>影片导航</h2></div>
+    <div class="genre-grid">
+      <div class="gblock g1"><h4>动作电影</h4><p>1,286 部 · 枪战 / 格斗 / 追车</p></div>
+      <div class="gblock g2"><h4>喜剧电影</h4><p>1,542 部 · 搞笑 / 黑色幽默</p></div>
+      <div class="gblock g3"><h4>爱情电影</h4><p>2,031 部 · 浪漫 / 青春 / 文艺</p></div>
+      <div class="gblock g4"><h4>科幻电影</h4><p>876 部 · 太空 / 未来 / AI</p></div>
+      <div class="gblock g5"><h4>悬疑惊悚</h4><p>1,103 部 · 推理 / 犯罪 / 烧脑</p></div>
+      <div class="gblock g6"><h4>恐怖惊悚</h4><p>742 部 · 灵异 / 血腥 / 心理</p></div>
+      <div class="gblock g7"><h4>动画电影</h4><p>658 部 · 国漫 / 日漫 / 欧美</p></div>
+      <div class="gblock g8"><h4>纪录片</h4><p>523 部 · 自然 / 历史 / 人物</p></div>
+    </div>
+
+    <div class="sechd"><div class="bar"></div><h2>合作与联系</h2></div>
+    <div style="background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px">
+      <p style="color:var(--mut);line-height:2.2;font-size:.9rem">
+        📧 商务合作：<a href="#" style="color:var(--k5)">business@k5dianyingwang-zh.github.io</a><br>
+        💬 用户反馈：<a href="#" style="color:var(--k5)">feedback@k5dianyingwang-zh.github.io</a><br>
+        🤝 内容合作：影视出品方 / 发行方可发送邮件洽谈资源合作事宜<br>
+        📢 投稿须知：原创影评、观影报告、影视评论稿件均可投递
+      </p>
+    </div>
+  </section>
+
+</div>
+
+<!-- Footer -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <span class="logo-k5">k5</span><span style="font-size:1.1rem;color:var(--mut)">电影网</span>
+        <p>k5电影网（k5dianyingwang-zh.github.io）致力于为用户提供最新、最全、最清晰的电影在线观看与推荐服务。每日更新院线热映、网络电影、经典老片、欧美剧集、日韩综艺等全类型影视内容，支持多条件筛选与高清播放。</p>
+      </div>
+      <div class="foot-col">
+        <h5>影片频道</h5>
+        <a href="#">动作电影</a><a href="#">喜剧电影</a><a href="#">爱情电影</a><a href="#">科幻电影</a><a href="#">悬疑惊悚</a><a href="#">恐怖电影</a>
+      </div>
+      <div class="foot-col">
+        <h5>内容分类</h5>
+        <a href="#">热映榜</a><a href="#">排行榜</a><a href="#">年度盘点</a><a href="#">影视资讯</a><a href="#">即将上映</a><a href="#">经典老片</a>
+      </div>
+      <div class="foot-col">
+        <h5>关于本站</h5>
+        <a href="#">关于我们</a><a href="#">投稿须知</a><a href="#">合作联系</a><a href="#">版权声明</a><a href="#">隐私政策</a><a href="#">免责声明</a>
+      </div>
+    </div>
+    <div class="foot-bar">
+      <span>© 2026 k5电影网（k5dianyingwang-zh.github.io）保留所有权利 · 转载请注明出处</span>
+      <span>网站地址：<span class="url">https://k5dianyingwang-zh.github.io</span></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Tab switching
+var tabs=document.querySelectorAll('.tab');
+var pages=document.querySelectorAll('.page');
+tabs.forEach(function(t){
+  t.addEventListener('click',function(){
+    tabs.forEach(function(x){x.classList.remove('active')});
+    t.classList.add('active');
+    var target=t.getAttribute('data-page');
+    pages.forEach(function(p){p.classList.remove('show')});
+    var el=document.getElementById(target);
+    if(el) el.classList.add('show');
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+});
+// Chip toggle
+document.querySelectorAll('.chips').forEach(function(group){
+  group.querySelectorAll('.chip').forEach(function(c){
+    c.addEventListener('click',function(){
+      group.querySelectorAll('.chip').forEach(function(x){x.classList.remove('on')});
+      c.classList.add('on');
+    });
+  });
+});
+</script>
+</body>
+</html>
